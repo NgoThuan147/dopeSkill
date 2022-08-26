@@ -763,7 +763,18 @@
         const search = document.querySelector('#search');
         const modalSearch = document.querySelector('#modal__search')
 
-        search.onkeyup = (e) => {
+        function debounce(func, timeout = 600) {
+            let timer;
+            return (...args) => {
+                clearTimeout(timer);
+                timer = setTimeout(() => { func.apply(this, args); }, timeout);
+            };
+        }
+        function saveInput() {
+            console.log('Saving data');
+        }
+
+        search.onkeyup = debounce((e) => {
             if (e.target.value != '') {
                 modalSearch.classList.remove("hidden")
                 modalSearch.classList.add("block")
@@ -771,7 +782,7 @@
                 modalSearch.classList.remove("block")
                 modalSearch.classList.add("hidden")
             }
-        }
+        })
 
         const handleHoverMenu = (element, elementModal) => {
             element.onmouseover = () => {
