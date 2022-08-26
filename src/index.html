@@ -1,0 +1,804 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css" /> -->
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="text-grey-700">
+    <header>
+        <div class="py-2 px-3 bg-[#164E63]">
+            <p class="text-[#FFFFFF] text-center text-lg not-italic font-normal relative">
+                #DopeSkillBacktoSchool Get 15% OFF, Use Promo Code : DOPE15
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="w-4 h-4 text-[#FFFFFF] absolute right-0 top-0 cursor-pointer">
+                    <path fill-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z"
+                        clip-rule="evenodd" />
+                </svg>
+            </p>
+        </div>
+        <div class="bg-[#F9FAFB] py-3">
+            <div class="w-[95%] mx-auto flex justify-between items-center">
+                <div class="w-1/12">
+                    <img class="w-full h-full" src="./images/logoDopeskill.png" alt="logo">
+                </div>
+                <div class="w-6/12 flex items-center border border-grey-300 py-4 px-7 rounded-3xl relative">
+                    <input id="search"
+                        class="w-full bg-transparent outline-0 border-0 text-grey-700 focus:shadow-none shadow-none"
+                        type="text" placeholder="Search product by name..." />
+                    <button type="button" data-modal-toggle="defaultModal">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 cursor-pointer">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+                    </button>
+
+                    <div id="modal__search"
+                        class="absolute left-0 top-14 z-20 bg-white w-full pt-12 px-9 pb-6 shadow-2xl hidden">
+                        <h4 class="text-grey-900 font-semibold text-xl">Search suggestion</h4>
+
+                        <div class="mt-1">
+                            <div
+                                class="flex items-center gap-6 py-5 border-b border-dashed border-grey-300 hover:opacity-50 cursor-pointer transition-opacity">
+                                <div>
+                                    <img class="w-full h-full" src="./images/yeezy.png" alt="yeezy">
+                                </div>
+                                <div>
+                                    <p class="text-[18px] text-grey-700">Donec et urna a risus pretium venenatis nec</p>
+                                    <h5 class="font-semibold text-[18px]">$36,99</h5>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center gap-6 py-5 border-b border-dashed border-grey-300 hover:opacity-50 cursor-pointer transition-opacity">
+                                <div class="relative">
+                                    <img class="w-full h-full" src="./images/yeezy.png" alt="yeezy">
+                                    <img class="absolute bottom-10 left-12 opacity-100" src="./images/image 26.png"
+                                        alt="">
+                                </div>
+                                <div>
+                                    <p class="text-[18px] text-grey-700">Donec et urna a risus pretium
+                                        venenatis nec</p>
+                                    <h5 class="font-semibold text-[18px]">$36,99</h5>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center gap-6 py-5 border-b border-dashed border-grey-300 hover:opacity-50 cursor-pointer transition-opacity">
+                                <div>
+                                    <img class="w-full h-full" src="./images/yeezy.png" alt="yeezy">
+                                </div>
+                                <div>
+                                    <p class="text-[18px] text-grey-700">Donec et urna a risus pretium venenatis nec</p>
+                                    <h5 class="font-semibold text-[18px]">$36,99</h5>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center gap-6 py-5 border-b border-dashed border-grey-300 hover:opacity-50 cursor-pointer transition-opacity">
+                                <div class="relative">
+                                    <img class="w-full h-full" src="./images/yeezy.png" alt="yeezy">
+                                    <img class="absolute bottom-10 left-12 opacity-100" src="./images/Group.png" alt="">
+                                </div>
+                                <div>
+                                    <p class="text-[18px] text-grey-700">Donec et urna a risus pretium venenatis nec</p>
+                                    <h5 class="font-semibold text-[18px]">$36,99</h5>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center gap-6 py-5 border-b border-dashed border-grey-300 hover:opacity-50 cursor-pointer transition-opacity">
+                                <div>
+                                    <img class="w-full h-full" src="./images/yeezy.png" alt="yeezy">
+                                </div>
+                                <div>
+                                    <p class="text-[18px] text-grey-700">Donec et urna a risus pretium venenatis nec</p>
+                                    <h5 class="font-semibold text-[18px]">$36,99</h5>
+                                </div>
+                            </div>
+                            <div class="mt-4 flex items-center gap-2">
+                                <a href="#" class="font-medium text-[16px] text-grey-900">View more</a>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-6 h-6">
+                                    <path fill-rule="evenodd"
+                                        d="M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="w-1/12 flex items-center gap-4">
+                    <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 cursor-pointer">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                        </svg></button>
+                    <a href="#">Sign in</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-[95%] mx-auto relative">
+            <div class="swiper mySwiper relative py-6">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a id="match-your-jordan" class="text-[18px] text-grey-700 cursor-pointer">Match your Jordan</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd"
+                                d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="swiper-slide">
+                        <a id="match-your-yeezy" class="text-[18px] text-grey-700 cursor-pointer">Match your Yeezy</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd"
+                                d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="text-[18px] text-grey-700 cursor-pointer">Match your Dunk</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd"
+                                d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="text-[18px] text-grey-700 cursor-pointer">Best collections</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="text-[18px] text-grey-700 cursor-pointer">Socks</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="text-[18px] text-grey-700 cursor-pointer">Jogger pants</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="text-[18px] text-grey-700 cursor-pointer">Backpack</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="text-[18px] text-grey-700 cursor-pointer">Shoelace</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="text-[18px] text-grey-700 cursor-pointer">Shoelace</a>
+                    </div>
+                </div>
+                <div class="button-prev absolute left-1 z-10 top-1/2" style="transform: translate(-50%, -50%);">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>
+                </div>
+                <div class="button-next absolute top-1/2 right-[-10px] z-10" style="transform: translate(-50%, -50%);">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </div>
+            </div>
+
+            <div id="modal__match-your-jordan" class="bg-white py-8 px-11 absolute flex gap-9 top-12 hidden">
+                <div class="flex flex-col justify-between">
+                    <a class="text-[18px] text-grey-600 hover:text-blue-600" href="#">Dunk Low Candy</a>
+                    <a class="text-[18px] text-grey-600 hover:text-blue-600" href="#">Dunk Low Panda</a>
+                    <a class="text-[18px] text-grey-600 hover:text-blue-600" href="#">Match Yeezy 700</a>
+                    <a class="text-[18px] text-grey-600 hover:text-blue-600" href="#">Item</a>
+                    <a class="text-[18px] text-grey-600 hover:text-blue-600" href="#">Item</a>
+                    <a class="text-[18px] text-grey-600 hover:text-blue-600" href="#">Item</a>
+                    <a class="text-[18px] text-grey-600 hover:text-blue-600" href="#">Item</a>
+                    <a class="text-[18px] text-grey-600 hover:text-blue-600" href="#">Item</a>
+                </div>
+                <div>
+                    <img class="w-full h-full" src="./images/Rectangle 75.png" alt="product">
+                </div>
+            </div>
+
+            <div id="modal__match-your-yeezy" class="bg-white py-8 px-11 absolute left-72 flex gap-9 top-12 hidden">
+                <div class="flex justify-between flex-wrap">
+                    <div class="w-[19%] flex justify-center items-center mb-5">
+                        <img src="./images/Rectangle 85.png" alt="logo">
+                    </div>
+                    <div class="w-[19%] flex justify-center items-center mb-5">
+                        <img src="./images/Rectangle 85.png" alt="logo">
+                    </div>
+                    <div class="w-[19%] flex justify-center items-center mb-5">
+                        <img src="./images/Rectangle 85.png" alt="logo">
+                    </div>
+                    <div class="w-[19%] flex justify-center items-center mb-5">
+                        <img src="./images/Rectangle 85.png" alt="logo">
+                    </div>
+                    <div class="w-[19%] flex justify-center items-center mb-5">
+                        <img src="./images/Rectangle 85.png" alt="logo">
+                    </div>
+                    <div class="w-[19%] flex justify-center items-center mb-5">
+                        <img src="./images/Rectangle 85.png" alt="logo">
+                    </div>
+                    <div class="w-[19%] flex justify-center items-center mb-5">
+                        <img src="./images/Rectangle 85.png" alt="logo">
+                    </div>
+                    <div class="w-[19%] flex justify-center items-center mb-5">
+                        <img src="./images/Rectangle 85.png" alt="logo">
+                    </div>
+                    <div class="w-[19%] flex justify-center items-center mb-5">
+                        <img src="./images/Rectangle 85.png" alt="logo">
+                    </div>
+                    <div class="w-[19%] flex justify-center items-center mb-5">
+                        <img src="./images/Rectangle 85.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div>
+        <div>
+            <img class="w-full" src="./images/Rectangle3.png" alt="banner">
+        </div>
+        <div class="flex bg-grey-50">
+            <div class="bg-grey-900 py-20 px-12 w-5/12">
+                <h3 class="text-3xl font-semibold text-white">QUALITY MEANS EVERYTHING!!!</h3>
+            </div>
+            <div class="flex items-center w-7/12">
+                <p class="px-16 text-xl">
+                    Our tees are 100% cotton tees with huge, high quality graphics printed on the front. We pride
+                    ourselves
+                    in providing the highest quality products for an affordable price! We really hope you find something
+                    on
+                    our site that you love and as always, we appreciate your support!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2 class="text-center text-4xl font-medium text-gray-900 mt-16">NEW & UPCOMING DROPS</h2>
+        <div class="mt-11">
+            <div class="swiper mySwiper1 w-[95%]">
+                <div class="swiper-wrapper h-[400px]">
+                    <div class="swiper-slide">
+                        <div class="p-5 bg-grey-50">
+                            <img src="./images/product1.png" alt="product">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="p-5 bg-grey-50">
+                            <img src="./images/product1.png" alt="product">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="p-5 bg-grey-50">
+                            <img src="./images/product1.png" alt="product">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="p-5 bg-grey-50">
+                            <img src="./images/product1.png" alt="product">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="p-5 bg-grey-50">
+                            <img src="./images/product1.png" alt="product">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="p-5 bg-grey-50">
+                            <img src="./images/product1.png" alt="product">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="p-5 bg-grey-50">
+                            <img src="./images/product1.png" alt="product">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="p-5 bg-grey-50">
+                            <img src="./images/product1.png" alt="product">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="p-5 bg-grey-50">
+                            <img src="./images/product1.png" alt="product">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="p-5 bg-grey-50">
+                            <img src="./images/product1.png" alt="product">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="p-5 bg-grey-50">
+                            <img src="./images/product1.png" alt="product">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="p-5 bg-grey-50">
+                            <img src="./images/product1.png" alt="product">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="p-5 bg-grey-50">
+                            <img src="./images/product1.png" alt="product">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="p-5 bg-grey-50">
+                            <img src="./images/product1.png" alt="product">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center gap-4 mt-11">
+                <div class="button-prev-product p-3 bg-grey-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>
+                </div>
+                <div class="button-next-product p-3 bg-grey-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-16 bg-grey-50 py-14">
+        <h2 class="text-center text-4xl font-medium text-gray-900 mt-16">NEW ARRIVALS</h2>
+
+        <div class="w-[95%] flex items-center justify-between mt-11 mx-auto flex-wrap">
+            <div class="relative">
+                <img class="w-full h-full" src="./images/Rectangle.png" alt="product">
+                <a href="#" class="absolute bottom-3 left-4 text-white text-xl font-medium">Product name...</a>
+            </div>
+            <div class="relative">
+                <img class="w-full h-full" src="./images/Rectangle1.png" alt="product">
+                <a href="#" class="absolute bottom-3 left-4 text-white text-xl font-medium">Product name...</a>
+            </div>
+            <div class="relative">
+                <img class="w-full h-full" src="./images/Rectangle.png" alt="product">
+                <a href="#" class="absolute bottom-3 left-4 text-white text-xl font-medium">Product name...</a>
+            </div>
+            <div class="relative">
+                <img class="w-full h-full" src="./images/Rectangle1.png" alt="product">
+                <a href="#" class="absolute bottom-3 left-4 text-white text-xl font-medium">Product name...</a>
+            </div>
+        </div>
+
+        <div class="flex justify-center mt-11">
+            <button class="px-6 py-2 bg-grey-900 text-white text-[14px] uppercase">View more products</button>
+        </div>
+    </div>
+
+    <div class="mt-14 w-[95%] mx-auto flex justify-between items-stretch">
+        <div class="w-[49%] relative">
+            <img class="w-full h-full" src="./images/Rectangle 11.png" alt="product">
+            <button class="absolute right-3 bottom-3 flex items-center gap-2 py-4 px-6 bg-rgba-0.6">
+                <p class="text-white text-xl font-semibold uppercase">Yeezy</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 text-white text-xl font-semibold uppercase">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </button>
+        </div>
+        <div class="w-[49%] flex flex-col justify-between">
+            <div class="relative">
+                <img class="w-full h-full" src="./images/Rectangle 15.png" alt="product">
+                <button class="absolute right-3 bottom-3 flex items-center gap-2 py-4 px-6 bg-rgba-0.6">
+                    <p class="text-white text-xl font-semibold uppercase">Jordan</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-white text-xl font-semibold uppercase">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="relative">
+                <img class="w-full h-full" src="./images/Rectangle 16.png" alt="product">
+                <button class="absolute right-3 bottom-3 flex items-center gap-2 py-4 px-6 bg-rgba-0.6">
+                    <p class="text-white text-xl font-semibold uppercase">Dunks</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-white text-xl font-semibold uppercase">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-14 w-[95%] mx-auto">
+        <h2 class="text-center text-4xl font-medium text-gray-900 mt-16">SHOP BY DESIGN</h2>
+
+        <div class="mt-8 flex justify-between items-stretch flex-wrap">
+            <div class="w-[16%] mb-14">
+                <img class="w-full h-full" src="./images/Rectangle 27.png" alt="desgin">
+                <p class="text-center font-medium">Design 7</p>
+            </div>
+            <div class="w-[16%] mb-14">
+                <img class="w-full h-full" src="./images/Rectangle 27.png" alt="desgin">
+                <p class="text-center font-medium">Design 7</p>
+            </div>
+            <div class="w-[16%] mb-14">
+                <img class="w-full h-full" src="./images/Rectangle 27.png" alt="desgin">
+                <p class="text-center font-medium">Design 7</p>
+            </div>
+            <div class="w-[16%] mb-14">
+                <img class="w-full h-full" src="./images/Rectangle 27.png" alt="desgin">
+                <p class="text-center font-medium">Design 7</p>
+            </div>
+            <div class="w-[16%] mb-14">
+                <img class="w-full h-full" src="./images/Rectangle 27.png" alt="desgin">
+                <p class="text-center font-medium">Design 7</p>
+            </div>
+            <div class="w-[16%] mb-14">
+                <img class="w-full h-full" src="./images/Rectangle 27.png" alt="desgin">
+                <p class="text-center font-medium">Design 7</p>
+            </div>
+            <div class="w-[16%] mb-14">
+                <img class="w-full h-full" src="./images/Rectangle 27.png" alt="desgin">
+                <p class="text-center font-medium">Design 7</p>
+            </div>
+            <div class="w-[16%] mb-14">
+                <img class="w-full h-full" src="./images/Rectangle 27.png" alt="desgin">
+                <p class="text-center font-medium">Design 7</p>
+            </div>
+            <div class="w-[16%] mb-14">
+                <img class="w-full h-full" src="./images/Rectangle 27.png" alt="desgin">
+                <p class="text-center font-medium">Design 7</p>
+            </div>
+            <div class="w-[16%] mb-14">
+                <img class="w-full h-full" src="./images/Rectangle 27.png" alt="desgin">
+                <p class="text-center font-medium">Design 7</p>
+            </div>
+            <div class="w-[16%] mb-14">
+                <img class="w-full h-full" src="./images/Rectangle 27.png" alt="desgin">
+                <p class="text-center font-medium">Design 7</p>
+            </div>
+            <div class="w-[16%] mb-14">
+                <img class="w-full h-full" src="./images/Rectangle 27.png" alt="desgin">
+                <p class="text-center font-medium">Design 7</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-12 w-[95%] mx-auto">
+        <h2 class="text-center text-4xl font-medium text-gray-900 mt-16">SHOP BY DESIGN</h2>
+
+        <div class="flex items-center gap-6 justify-center mt-8">
+            <div class="w-[45px] h-[45px] rounded-full bg-[#111827]"></div>
+            <div class="w-[45px] h-[45px] rounded-full bg-[#FFFFFF] border border-grey-300"></div>
+            <div class="w-[45px] h-[45px] rounded-full bg-[#B91C1C]"></div>
+            <div class="w-[45px] h-[45px] rounded-full bg-[#EA580C]"></div>
+            <div class="w-[45px] h-[45px] rounded-full bg-[#F59E0B]"></div>
+            <div class="w-[45px] h-[45px] rounded-full bg-[#10B981]"></div>
+            <div class="w-[45px] h-[45px] rounded-full bg-[#2DD4BF]"></div>
+            <div class="w-[45px] h-[45px] rounded-full bg-[#22D3EE]"></div>
+            <div class="w-[45px] h-[45px] rounded-full bg-[#38BDF8]"></div>
+            <div class="w-[45px] h-[45px] rounded-full bg-[#60A5FA]"></div>
+            <div class="w-[45px] h-[45px] rounded-full bg-[#818CF8]"></div>
+            <div class="w-[45px] h-[45px] rounded-full bg-[#A78BFA]"></div>
+            <div class="w-[45px] h-[45px] rounded-full bg-[#EC4899]"></div>
+            <div class="w-[45px] h-[45px] rounded-full bg-[#F43F5E]"></div>
+        </div>
+    </div>
+
+    <div class="mt-16 bg-grey-50 py-12">
+        <h2 class="text-center text-4xl font-medium text-gray-900 mt-16">BEST SELLING PRODUCTS</h2>
+
+        <div class="mt-11 w-[95%] mx-auto flex justify-between items-stretch flex-wrap">
+            <div class="mb-11 w-[24%]">
+                <div>
+                    <img class="w-full h-full" src="./images/Rectangle 18.png" alt="product">
+                </div>
+                <h4 class="text-[18px] mt-5 text-[#000000] font-medium">Product name</h4>
+                <div class="mt-3 flex justify-between items-center">
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-4 h-4 text-[#FED42D]">
+                            <path fill-rule="evenodd"
+                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <p class="text-[14px] text-[#302B28]">4.5(27) <span class="text-grey-400">- 122 reviews</span>
+                        </p>
+                    </div>
+                    <h4 class="text-[18px] font-semibold text-[#000000]">$138</h4>
+                </div>
+            </div>
+            <div class="mb-11 w-[24%]">
+                <div>
+                    <img class="w-full h-full" src="./images/Rectangle 18.png" alt="product">
+                </div>
+                <h4 class="text-[18px] mt-5 text-[#000000] font-medium">Product name</h4>
+                <div class="mt-3 flex justify-between items-center">
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-4 h-4 text-[#FED42D]">
+                            <path fill-rule="evenodd"
+                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <p class="text-[14px] text-[#302B28]">4.5(27) <span class="text-grey-400">- 122 reviews</span>
+                        </p>
+                    </div>
+                    <h4 class="text-[18px] font-semibold text-[#000000]">$138</h4>
+                </div>
+            </div>
+            <div class="mb-11 w-[24%]">
+                <div>
+                    <img class="w-full h-full" src="./images/Rectangle 18.png" alt="product">
+                </div>
+                <h4 class="text-[18px] mt-5 text-[#000000] font-medium">Product name</h4>
+                <div class="mt-3 flex justify-between items-center">
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-4 h-4 text-[#FED42D]">
+                            <path fill-rule="evenodd"
+                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <p class="text-[14px] text-[#302B28]">4.5(27) <span class="text-grey-400">- 122 reviews</span>
+                        </p>
+                    </div>
+                    <h4 class="text-[18px] font-semibold text-[#000000]">$138</h4>
+                </div>
+            </div>
+            <div class="mb-11 w-[24%]">
+                <div>
+                    <img class="w-full h-full" src="./images/Rectangle 18.png" alt="product">
+                </div>
+                <h4 class="text-[18px] mt-5 text-[#000000] font-medium">Product name</h4>
+                <div class="mt-3 flex justify-between items-center">
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-4 h-4 text-[#FED42D]">
+                            <path fill-rule="evenodd"
+                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <p class="text-[14px] text-[#302B28]">4.5(27) <span class="text-grey-400">- 122 reviews</span>
+                        </p>
+                    </div>
+                    <h4 class="text-[18px] font-semibold text-[#000000]">$138</h4>
+                </div>
+            </div>
+            <div class="mb-11 w-[24%]">
+                <div>
+                    <img class="w-full h-full" src="./images/Rectangle 18.png" alt="product">
+                </div>
+                <h4 class="text-[18px] mt-5 text-[#000000] font-medium">Product name</h4>
+                <div class="mt-3 flex justify-between items-center">
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-4 h-4 text-[#FED42D]">
+                            <path fill-rule="evenodd"
+                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <p class="text-[14px] text-[#302B28]">4.5(27) <span class="text-grey-400">- 122 reviews</span>
+                        </p>
+                    </div>
+                    <h4 class="text-[18px] font-semibold text-[#000000]">$138</h4>
+                </div>
+            </div>
+            <div class="mb-11 w-[24%]">
+                <div>
+                    <img class="w-full h-full" src="./images/Rectangle 18.png" alt="product">
+                </div>
+                <h4 class="text-[18px] mt-5 text-[#000000] font-medium">Product name</h4>
+                <div class="mt-3 flex justify-between items-center">
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-4 h-4 text-[#FED42D]">
+                            <path fill-rule="evenodd"
+                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <p class="text-[14px] text-[#302B28]">4.5(27) <span class="text-grey-400">- 122 reviews</span>
+                        </p>
+                    </div>
+                    <h4 class="text-[18px] font-semibold text-[#000000]">$138</h4>
+                </div>
+            </div>
+            <div class="mb-11 w-[24%]">
+                <div>
+                    <img class="w-full h-full" src="./images/Rectangle 18.png" alt="product">
+                </div>
+                <h4 class="text-[18px] mt-5 text-[#000000] font-medium">Product name</h4>
+                <div class="mt-3 flex justify-between items-center">
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-4 h-4 text-[#FED42D]">
+                            <path fill-rule="evenodd"
+                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <p class="text-[14px] text-[#302B28]">4.5(27) <span class="text-grey-400">- 122 reviews</span>
+                        </p>
+                    </div>
+                    <h4 class="text-[18px] font-semibold text-[#000000]">$138</h4>
+                </div>
+            </div>
+            <div class="mb-11 w-[24%]">
+                <div>
+                    <img class="w-full h-full" src="./images/Rectangle 18.png" alt="product">
+                </div>
+                <h4 class="text-[18px] mt-5 text-[#000000] font-medium">Product name</h4>
+                <div class="mt-3 flex justify-between items-center">
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-4 h-4 text-[#FED42D]">
+                            <path fill-rule="evenodd"
+                                d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <p class="text-[14px] text-[#302B28]">4.5(27) <span class="text-grey-400">- 122 reviews</span>
+                        </p>
+                    </div>
+                    <h4 class="text-[18px] font-semibold text-[#000000]">$138</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center mt-11">
+            <button class="px-6 py-2 bg-grey-900 text-white text-[14px] uppercase">View more products</button>
+        </div>
+    </div>
+
+    <div class="mt-16 w-[95%] mx-auto">
+        <h2 class="text-center text-4xl font-medium text-gray-900 mt-16">FOLLOW US ON INSTAGRAM</h2>
+
+        <div class="flex mt-11 flex-wrap">
+            <div class="w-[12.5%]">
+                <img class="w-full h-full" src="./images/Rectangle 51.png" alt="img">
+            </div>
+            <div class="w-[12.5%]">
+                <img class="w-full h-full" src="./images/Rectangle 51.png" alt="img">
+            </div>
+            <div class="w-[12.5%]">
+                <img class="w-full h-full" src="./images/Rectangle 51.png" alt="img">
+            </div>
+            <div class="w-[12.5%]">
+                <img class="w-full h-full" src="./images/Rectangle 51.png" alt="img">
+            </div>
+            <div class="w-[12.5%]">
+                <img class="w-full h-full" src="./images/Rectangle 51.png" alt="img">
+            </div>
+            <div class="w-[12.5%]">
+                <img class="w-full h-full" src="./images/Rectangle 51.png" alt="img">
+            </div>
+            <div class="w-[12.5%]">
+                <img class="w-full h-full" src="./images/Rectangle 51.png" alt="img">
+            </div>
+            <div class="w-[12.5%]">
+                <img class="w-full h-full" src="./images/Rectangle 51.png" alt="img">
+            </div>
+            <div class="w-[12.5%]">
+                <img class="w-full h-full" src="./images/Rectangle 51.png" alt="img">
+            </div>
+            <div class="w-[12.5%]">
+                <img class="w-full h-full" src="./images/Rectangle 51.png" alt="img">
+            </div>
+            <div class="w-[12.5%]">
+                <img class="w-full h-full" src="./images/Rectangle 51.png" alt="img">
+            </div>
+            <div class="w-[12.5%]">
+                <img class="w-full h-full" src="./images/Rectangle 51.png" alt="img">
+            </div>
+            <div class="w-[12.5%]">
+                <img class="w-full h-full" src="./images/Rectangle 51.png" alt="img">
+            </div>
+            <div class="w-[12.5%]">
+                <img class="w-full h-full" src="./images/Rectangle 51.png" alt="img">
+            </div>
+            <div class="w-[12.5%]">
+                <img class="w-full h-full" src="./images/Rectangle 51.png" alt="img">
+            </div>
+            <div class="w-[12.5%]">
+                <img class="w-full h-full" src="./images/Rectangle 51.png" alt="img">
+            </div>
+        </div>
+
+        <div class="flex justify-center mt-11">
+            <button class="px-6 py-2 bg-grey-900 text-white text-[14px] uppercase">View more products</button>
+        </div>
+    </div>
+
+    <div class="py-16 bg-grey-50 mt-14">
+        <div class="flex items-center justify-between w-[95%] mx-auto">
+            <div class="w-[49%]">
+                <h2 class="font-bold text-grey-900 text-4xl">Want product news and updates?</h2>
+                <h2 class="font-bold text-primary-color text-4xl">Sign up for our newsletter.</h2>
+            </div>
+            <div class="w-[49%] flex items-center gap-3 justify-center">
+                <input class="py-3 px-5 w-[70%] outline-0 border border-grey-300 rounded-md" type="text"
+                    placeholder="Enter your email">
+                <button class="bg-primary-color py-3 px-6 text-white font-medium">Notify me</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 5,
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".button-next",
+                prevEl: ".button-prev",
+            },
+        });
+
+        var swiper = new Swiper(".mySwiper1", {
+            slidesPerView: 5,
+            grid: {
+                rows: 2,
+            },
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".button-next-product",
+                prevEl: ".button-prev-product",
+            },
+        });
+
+        const search = document.querySelector('#search');
+        const modalSearch = document.querySelector('#modal__search')
+
+        search.onkeyup = (e) => {
+            if (e.target.value != '') {
+                modalSearch.classList.remove("hidden")
+                modalSearch.classList.add("block")
+            } else {
+                modalSearch.classList.remove("block")
+                modalSearch.classList.add("hidden")
+            }
+        }
+
+        const handleHoverMenu = (element, elementModal) => {
+            element.onmouseover = () => {
+                elementModal.classList.remove("hidden")
+                elementModal.classList.add("flex")
+            }
+
+            elementModal.onmouseover = () => {
+                elementModal.classList.remove("hidden")
+                elementModal.classList.add("flex")
+            }
+
+            elementModal.onmouseout = () => {
+                elementModal.classList.remove("flex")
+                elementModal.classList.add("hidden")
+            }
+        }
+
+        const elementMenuJordan = document.querySelector('#match-your-jordan')
+        const modalMenuJordan = document.querySelector('#modal__match-your-jordan');
+        handleHoverMenu(elementMenuJordan, modalMenuJordan)
+
+        const elementMenuYeezy = document.querySelector('#match-your-yeezy')
+        const modalMenuYeezy = document.querySelector('#modal__match-your-yeezy');
+        handleHoverMenu(elementMenuYeezy, modalMenuYeezy)
+
+    </script>
+</body>
+
+</html>
